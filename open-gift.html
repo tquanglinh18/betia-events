@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betia Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styles-scss.css" />
+  </head>
+  <body>
+    <section>
+      <header class="header">
+        <a href="">
+          <img src="./assets/images/logo_betia.png" alt="" />
+        </a>
+        <div class="header__info">
+          <div class="">
+            <p>ID: <span>12345678900</span></p>
+          </div>
+          <div class="header__info--spin">
+            <p>Lượt mở quà: <span>05</span></p>
+          </div>
+        </div>
+      </header>
+    <section>
+      <div class="section-centents w-full max-w-[700px] mx-auto">
+        <div class="w-full mb-4">
+          <ul class="tabs">
+            <li data-tab-target="#mission" class="tab">Nhiệm vụ</li>
+            <li data-tab-target="#open-gift" class="tab active">Mở quà</li>
+            <li data-tab-target="#history" class="tab">Lịch sử mở</li>
+          </ul>
+
+          <div class="tab-content flex-col-center">
+            <div id="mission" data-tab-content class="mission">
+              <div class="mission__item">
+                <div class="mission__item--contents">
+                  <h5>Nhiệm vụ 01</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <div class="mission__item--status">
+                  Hoàn thành <br />(+1 lượt)
+                </div>
+              </div>
+              <div class="mission__item">
+                <div class="mission__item--contents">
+                  <h5>Nhiệm vụ 02</h5>
+                  <p>Học betia 5 phút</p>
+                </div>
+                <div class="mission__item--status">
+                  <a href="/open-gift.html" class="button-base">
+                    <img src="./assets/images/btn_green.png" alt="" />
+                    <p class="button-base--title">Làm nhiệm vụ</p>
+                  </a>
+                </div>
+              </div>
+              <div class="mission__item">
+                <div class="mission__item--contents">
+                  <h5>Nhiệm vụ 03</h5>
+                  <p>Học betia 10 phút</p>
+                </div>
+                <div class="mission__item--status">
+                  <a href="/open-gift.html" class="button-base">
+                    <img src="./assets/images/btn_green.png" alt="" />
+                    <p class="button-base--title">Làm nhiệm vụ</p>
+                  </a>
+                </div>
+              </div>
+              <div class="mission__item">
+                <div class="mission__item--contents">
+                  <h5>Nhiệm vụ 04</h5>
+                  <p>Học betia 20 phút</p>
+                </div>
+                <div class="mission__item--status">
+                  <a href="/open-gift.html" class="button-base">
+                    <img src="./assets/images/btn_green.png" alt="" />
+                    <p class="button-base--title">Làm nhiệm vụ</p>
+                  </a>
+                </div>
+              </div>
+              <div class="mission__item">
+                <div class="mission__item--contents">
+                  <h5>Nhiệm vụ 05</h5>
+                  <p>Học betia 30 phút</p>
+                </div>
+                <div class="mission__item--status">
+                  <a href="/open-gift.html" class="button-base">
+                    <img src="./assets/images/btn_green.png" alt="" />
+                    <p class="button-base--title">Làm nhiệm vụ</p>
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+            <div id="open-gift" data-tab-content class="active open-gift">
+              <div class="w-full list-gift-elm">
+                <div class="flex-center">
+                  <img
+                    src="./assets/images/gift_title_slogan.png"
+                    alt=""
+                    class="my-6"
+                  />
+                </div>
+
+                <div class="list-gift">
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+
+                  <a class="gift-box" id="">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nhập thông tin -->
+              <div class="input-info hidden">
+                <div class="flex-col-center">
+                  <div class="mb-[8%]">
+                    <img src="./assets/images/ic_gift_box.png" alt="" />
+                  </div>
+
+                  <form action="" class="w-full">
+                    <div class="mb-8">
+                      <div class="input-info__field">
+                        <label for="email">Địa chỉ Email <span>(*)</span></label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Nhập địa chỉ Email"
+                          required
+                        />
+                      </div>
+  
+                      <div class="input-info__field">
+                        <label for="phone-number"
+                          >Số điện thoại <span>(*)</span></label
+                        >
+                        <input
+                          type="number"
+                          name="phone-number"
+                          id="phone-number"
+                          placeholder="Nhập địa chỉ Email"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="flex-center">
+                      <button class="button-base" id="btn-send-info">
+                        <img src="./assets/images/btn_green.png" alt="" />
+                        <p class="button-base--title">Gửi thông tin</p>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Thông báo nhận thành công -->
+              <div class="w-full result-gift hidden">
+                <div class="flex-col-center">
+                  <p class="font-bold text-white text-center mb-4 px-2">
+                    Đã nhận thông tin thành công.<br> Quà sẽ được gửi về sau khi sự
+                    kiện kết thúc
+                  </p>
+                  <div class="w-full flex justify-center items-center">
+                    <button class="button-base" id="btn-close">
+                      <img src="./assets/images/btn_green.png" alt="" />
+                      <p class="button-base--title">Đóng</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="history" data-tab-content class="history">
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+
+              <div class="history__item">
+                <div class="history__item--contents">
+                  <h5>Nhiệm vụ 1</h5>
+                  <p>Ghé thăm trang</p>
+                </div>
+                <a href="/open-gift.html" class="button-base">
+                  <img src="./assets/images/btn_green.png" alt="" />
+                  <p class="button-base--title">Xem chi tiết</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <div class="flex-center  sticky bottom-0 space-x-4 p-4 float-end">
+      <a href="/" class="button-base">
+        <img src="./assets/images/btn_orange.png" alt="" />
+
+        <p class="button-base--title-whiteColor">Thể lệ</p>
+      </a>
+      <a href="/" class="button-base">
+        <img src="./assets/images/btn_orange.png" alt="" />
+
+        <p class="button-base--title-whiteColor">QR tải Betia</p>
+      </a>
+    </div>
+
+    <div class="pop-up-show-gift-box hidden">
+      <div class="flex-center h-full px-4">
+        <div class="pop-up__contents--layout">
+          <div class="pop-up__contents--possition flex-center">
+            <img src="./assets/images/ic_reward.png" alt="" />
+          </div>
+          <div class="">
+            <div class="flex-center my-[8%]">
+              <img src="./assets/images/ic_gift_box.png" alt="" />
+            </div>
+
+            <div class="flex-center pop-up-option">
+              <button class="button-base" id="btn-re-open">
+                <img src="./assets/images/btn_white.png" alt="" />
+                <p class="button-base--title">Mở lại</p>
+              </butto>
+              <button class="button-base" id="btn-recevie">
+                <img src="./assets/images/btn_green.png" alt="" />
+                <p class="button-base--title">Nhận quà</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

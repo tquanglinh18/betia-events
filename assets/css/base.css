@@ -1,0 +1,62 @@
+.bg-gradient-guide {
+  background: radial-gradient(
+    60.45% 55.63% at 52.22% 50.05%,
+    rgba(16, 82, 150, 0.2) 0%,
+    rgba(14, 15, 15, 0.2) 100%
+  );
+}
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  padding-top: 8px !important;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #071a3f;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.tab {
+  background-image: url("../images/tab-unactive.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  color: #595959;
+  font-weight: bold;
+}
+
+.tab.active {
+  background-image: url("../images/tab_active.png");
+  color: white;
+}
+
+.tab:hover {
+  background-image: url("../images/tab_active.png");
+  color: white;
+}
+
+.tab-content {
+  width: 100%;
+  background-color: #192d52;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  height: 100%;
+  min-height: 60vh;
+  overflow-y: auto
+}

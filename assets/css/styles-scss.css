@@ -1,0 +1,234 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  color: #0c3d77;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__info div {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.header__info--spin {
+  border-left: #0c3d77 1px solid;
+}
+
+.guide {
+  background: radial-gradient(60.45% 55.63% at 52.22% 50.05%, rgba(16, 82, 150, 0.2) 0%, rgba(14, 15, 15, 0.2) 100%);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+.guide h3 {
+  color: #ffcf29;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+.guide__items {
+  margin-bottom: 1rem;
+}
+.guide__items--title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.guide ul {
+  margin-left: 0.5rem;
+}
+
+.button-base {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+}
+.button-base--title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #0c3d77;
+  font-weight: bold;
+}
+.button-base--title-whiteColor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mission {
+  padding: 1rem;
+  width: 100%;
+}
+.mission__item {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(16, 82, 150, 0.2509803922);
+  background: linear-gradient(180deg, #ecf5fa 0.69%, #ccf1ff 99.31%);
+}
+.mission__item:last-child {
+  margin-bottom: 0;
+}
+.mission__item--contents {
+  color: #252525;
+}
+.mission__item--contents h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.mission__item--contents p {
+  font-size: 14px;
+}
+.mission__item--status {
+  color: #105296;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.open-gift {
+  width: 100%;
+}
+
+.history {
+  padding: 1rem;
+  width: 100%;
+  max-height: 70vh;
+}
+.history__item {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(16, 82, 150, 0.2509803922);
+  background: linear-gradient(180deg, #ecf5fa 0.69%, #ccf1ff 99.31%);
+}
+.history__item:last-child {
+  margin-bottom: 0;
+}
+.history__item--contents {
+  color: #252525;
+}
+.history__item--contents h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.history__item--contents p {
+  font-size: 14px;
+}
+.history__item--status {
+  color: #105296;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-gift {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.input-info {
+  padding: 1rem;
+  width: 100%;
+}
+.input-info form {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-info form label {
+  color: #fff;
+}
+.input-info form label span {
+  color: #ff0000;
+}
+.input-info form input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.input-info__field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.pop-up-show-gift-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.2509803922);
+  height: 100vh;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pop-up-show-gift-box .pop-up__contents--layout {
+  width: 100%;
+  background: #0c3d77;
+  border-radius: 1.5rem;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  position: relative;
+}
+.pop-up-show-gift-box .pop-up__contents--possition {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: -50%;
+  transform: translate(-50%, -75%);
+}
+.pop-up-show-gift-box .pop-up-option button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
