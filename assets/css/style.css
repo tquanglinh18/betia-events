@@ -713,6 +713,10 @@ video {
   text-align: center;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-\[40px\] {
   font-size: 40px;
 }
@@ -725,10 +729,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
 }
 
 .font-bold {
@@ -750,11 +750,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#105296\] {
-  --tw-text-opacity: 1;
-  color: rgb(16 82 150 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -789,20 +784,12 @@ video {
     right: 15%;
   }
 
-  .sm\:right-\[30\%\] {
-    right: 30%;
-  }
-
   .sm\:max-w-\[604px\] {
     max-width: 604px;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:right-\[15\%\] {
-    right: 15%;
-  }
-
   .md\:max-w-\[720px\] {
     max-width: 720px;
   }
