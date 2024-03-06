@@ -11,20 +11,19 @@
     <link rel="stylesheet" href="./assets/css/styles-scss.css" />
   </head>
   <body>
-    <section>
-      <header class="header">
-        <a href="">
-          <img src="./assets/images/logo_betia.png" alt="" />
-        </a>
-        <div class="header__info">
-          <div class="">
-            <p>ID: <span>12345678900</span></p>
-          </div>
-          <div class="header__info--spin">
-            <p>Lượt mở quà: <span>05</span></p>
-          </div>
+    <header class="header">
+      <a href="">
+        <img src="./assets/images/logo_betia.png" alt="" />
+      </a>
+      <div class="header__info">
+        <div class="">
+          <p>ID: <span>12345678900</span></p>
         </div>
-      </header>
+        <div class="header__info--spin">
+          <p>Lượt mở quà: <span>05</span></p>
+        </div>
+      </div>
+    </header>
     <section>
       <div class="section-centents w-full max-w-[700px] mx-auto">
         <div class="w-full mb-4">
@@ -93,7 +92,6 @@
                   </a>
                 </div>
               </div>
-             
             </div>
             <div id="open-gift" data-tab-content class="active open-gift">
               <div class="w-full list-gift-elm">
@@ -154,7 +152,9 @@
                   <form action="" class="w-full">
                     <div class="mb-8">
                       <div class="input-info__field">
-                        <label for="email">Địa chỉ Email <span>(*)</span></label>
+                        <label for="email"
+                          >Địa chỉ Email <span>(*)</span></label
+                        >
                         <input
                           type="email"
                           name="email"
@@ -163,7 +163,7 @@
                           required
                         />
                       </div>
-  
+
                       <div class="input-info__field">
                         <label for="phone-number"
                           >Số điện thoại <span>(*)</span></label
@@ -172,7 +172,7 @@
                           type="number"
                           name="phone-number"
                           id="phone-number"
-                          placeholder="Nhập địa chỉ Email"
+                          placeholder="Nhập Số điện thoại"
                           required
                         />
                       </div>
@@ -192,8 +192,8 @@
               <div class="w-full result-gift hidden">
                 <div class="flex-col-center">
                   <p class="font-bold text-white text-center mb-4 px-2">
-                    Đã nhận thông tin thành công.<br> Quà sẽ được gửi về sau khi sự
-                    kiện kết thúc
+                    Đã nhận thông tin thành công.<br />
+                    Quà sẽ được gửi về sau khi sự kiện kết thúc
                   </p>
                   <div class="w-full flex justify-center items-center">
                     <button class="button-base" id="btn-close">
@@ -327,46 +327,145 @@
             </div>
           </div>
         </div>
-
-        
       </div>
     </section>
 
-    <div class="flex-center  sticky bottom-0 space-x-4 p-4 float-end">
-      <a href="/" class="button-base">
+    <div
+      class="flex-center max-w-[700px] mx-auto sticky bottom-0 h-[10vh] space-x-4 p-4 float-end"
+    >
+      <button class="button-base" id="btn-rules">
         <img src="./assets/images/btn_orange.png" alt="" />
-
         <p class="button-base--title-whiteColor">Thể lệ</p>
-      </a>
-      <a href="/" class="button-base">
+      </button>
+      <button class="button-base" id="btn-qr-code">
         <img src="./assets/images/btn_orange.png" alt="" />
-
         <p class="button-base--title-whiteColor">QR tải Betia</p>
-      </a>
+      </button>
     </div>
 
     <div class="pop-up-show-gift-box hidden">
-      <div class="flex-center h-full px-4">
+      <div class="flex-center max-w-[700px] mx-auto h-full px-4">
         <div class="pop-up__contents--layout">
           <div class="pop-up__contents--possition flex-center">
             <img src="./assets/images/ic_reward.png" alt="" />
           </div>
           <div class="">
-            <div class="flex-center my-[8%]">
+            <div class="flex-center my-[8%] pop-up__contents--gift">
               <img src="./assets/images/ic_gift_box.png" alt="" />
             </div>
 
+            <div class="gift-result hidden">
+              <div class="flex-col-center mb-6 my-[8%]">
+                <img
+                  src="./assets/images/ic_gift_book.png"
+                  alt=""
+                  class="mb-4 gift-item"
+                />
+                <img src="./assets/images/ic_show-gift-1.png" alt="" />
+              </div>
+            </div>
+
             <div class="flex-center pop-up-option">
-              <button class="button-base" id="btn-re-open">
-                <img src="./assets/images/btn_white.png" alt="" />
-                <p class="button-base--title">Mở lại</p>
-              </butto>
               <button class="button-base" id="btn-recevie">
                 <img src="./assets/images/btn_green.png" alt="" />
                 <p class="button-base--title">Nhận quà</p>
               </button>
             </div>
           </div>
+          <button class="pop-up-show-gift-box--btn-close" id="btn-close-gift">
+            <img src="./assets/images/ic_close.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-up-rules hidden p-4 m-4">
+      <div class="pop-up-rules--layout flex-center">
+        <div class="guide w-full max-w-[700px] mx-auto relative">
+          <div class="flex-center">
+            <img
+              src="./assets/images/gift_title_slogan.png"
+              alt=""
+              class="my-6"
+            />
+          </div>
+          <p class="guide__items">Thời gian: 01/03 - 08/03</p>
+          <div class="guide__items">
+            <p class="guide__items--title">THỂ LỆ</p>
+            <ul>
+              <li>
+                Bước 1: Nhận lượt chơi miễn phí khi ghé trang & hoàn thành nhiệm
+                vụ
+              </li>
+              <li>Bước 2: Đập hộp & Rinh quà</li>
+              <li>
+                Bước 3: Đăng nhập tài khoản Betia English & Điền thông tin nhận
+                quà (nếu có)
+              </li>
+            </ul>
+          </div>
+
+          <div class="guide__items">
+            <div class="guide__items--title">GIẢI THƯỞNG</div>
+            <ul>
+              <li>- iPad gen 4 trị giá 14.990.000đ</li>
+              <li>
+                - 20 bộ sách học tiếng Anh Hodoo Reders (tổng giá trị 32 triệu
+                đồng)
+              </li>
+              <li>
+                - 500+ quà tặng hấp dẫn độc quyền (tổng giá trị 30 triệu đồng)
+              </li>
+              <li>
+                - 1000+ Special Gift từ IOE (Olympic tiếng Anh trên internet)
+              </li>
+            </ul>
+          </div>
+
+          <div class="guide__items">
+            <img src="./assets/images/list_gift.png" alt="" class="w-full" />
+          </div>
+
+          <button class="pop-up--btn-close" id="btn-close-rules">
+            <img src="./assets/images/ic_close.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-up-download hidden p-4 m-4">
+      <div class="pop-up-download--layout flex-center">
+        <div class="download w-full max-w-[700px] mx-auto relative">
+          <div class="flex-center">
+            <img src="./assets/images/title_download.png" alt="" class="my-6" />
+          </div>
+
+          <div class="download__items">
+            <div class="flex-center relative">
+              <img src="./assets/images/qr_download_app.png" alt="" />
+              <img
+                src="./assets/images/text_download_desc.png"
+                alt=""
+                class="absolute top-[50%] -translate-y-[50%] right-0 sm:right-[15%]"
+              />
+            </div>
+          </div>
+
+          <div class="download__items">
+            <div
+              class="text-center text-[20px] font-bold mb-4"
+            >
+              Hoặc
+            </div>
+            <div class="flex-col-center">
+              <img src="./assets/images/btn_gg_play.png" alt="" class="mb-4" />
+              <img src="./assets/images/btn_app_store.png" alt="" />
+            </div>
+          </div>
+
+          <button class="pop-up--btn-close" id="btn-close-download">
+            <img src="./assets/images/ic_close.png" alt="" />
+          </button>
         </div>
       </div>
     </div>

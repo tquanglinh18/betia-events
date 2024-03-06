@@ -26,10 +26,7 @@ body {
   font-family: Myriad Pro;
   font-weight: normal;
   font-style: normal;
-}
-
-section {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../images/bg_main_section.png");
   background-position: bottom center;
   background-size: auto 100%;
@@ -37,8 +34,7 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-  section {
-    min-height: 100vh;
+  body {
     background-image: url("../images/bg_main_section.png");
     background-position: bottom center;
     background-size: 100% auto;
@@ -46,11 +42,20 @@ section {
   }
 }
 
+section {
+  height: 80vh;
+  padding: 1rem;
+}
+
 .section-centents {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
-  padding: 1rem;
-  min-height: 100vh;
+}
+
+#history {
+  max-height: 70vh;
+  height: 100%;
+  overflow-y: auto;
 }

@@ -7,6 +7,7 @@ $yellowColor: #ffcf29;
 .header {
   position: sticky;
   top: 0;
+  z-index: 999;
   background-color: $textWhite;
   color: $mainColor;
   font-weight: bold;
@@ -29,12 +30,17 @@ $yellowColor: #ffcf29;
   }
 }
 
+.download {
+  background: $mainColor;
+  color: $textWhite;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .guide {
-  background: radial-gradient(
-    60.45% 55.63% at 52.22% 50.05%,
-    rgba(16, 82, 150, 0.2) 0%,
-    rgba(14, 15, 15, 0.2) 100%
-  );
+  background: $mainColor;
   color: $textWhite;
   padding: 1rem;
   border-radius: 1rem;
@@ -56,6 +62,14 @@ $yellowColor: #ffcf29;
   }
   ul {
     margin-left: 0.5rem;
+  }
+}
+
+.download__items {
+  margin-bottom: 1rem;
+  &--title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -130,7 +144,6 @@ $yellowColor: #ffcf29;
 .history {
   padding: 1rem;
   width: 100%;
-  max-height: 70vh;
   &__item {
     width: 100%;
     padding: 1rem;
@@ -158,5 +171,65 @@ $yellowColor: #ffcf29;
       color: #105296;
       text-align: center;
     }
+  }
+}
+
+.pop-up-rules {
+  margin: 1rem;
+  &--layout {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+  }
+  &--btn-close {
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+}
+
+.pop-up {
+  &--btn-close {
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+}
+
+.pop-up-download {
+  &--layout {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+  }
+}
+
+.gift-box:hover {
+  animation: shake 2s infinite linear;
+  cursor: pointer;
+}
+
+@keyframes zoom-out {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.3;
   }
 }
